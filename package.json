@@ -1,0 +1,30 @@
+{
+  "name": "api-rest-typescript",
+  "version": "1.0.0",
+  "description": "Software of Development with TYPESCRIPT & MYSQL (API REST)",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon src/index.ts --exec ts-node"
+  },
+  "keywords": [
+    "TYPESCRIPT",
+    "MYSQL",
+    "NODE"
+  ],
+  "author": "Daniel Alejo Alvarez",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/morgan": "^1.7.37",
+    "@types/mysql2": "types/mysql2",
+    "mysql2": "^2.0.2",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
