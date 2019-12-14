@@ -1,7 +1,7 @@
 import express, { Application } from 'express';
 import morgan from 'morgan';
 
-import {Config} from '../config/config';
+import {Config} from './config/config';
 
 import IndexRouter from './routes/index.routes';
 import PostRouter from './routes/post.routes';

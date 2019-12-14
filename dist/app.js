@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const morgan_1 = __importDefault(require("morgan"));
+const config_1 = require("./config/config");
 const index_routes_1 = __importDefault(require("./routes/index.routes"));
 const post_routes_1 = __importDefault(require("./routes/post.routes"));
 class App {
@@ -34,7 +35,7 @@ class App {
         this.app.use(index_routes_1.default);
     }
     settings() {
-        this.app.set('port', process.env.PORT || this.port || 3000);
+        this.app.set('port', config_1.Config.port || this.port);
     }
     listen() {
         return __awaiter(this, void 0, void 0, function* () {

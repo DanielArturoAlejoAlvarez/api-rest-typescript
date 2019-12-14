@@ -1,7 +1,7 @@
 export const Keys = {
     host: 'localhost',
     user: 'root',
-    password: 'Br1tney$2=',
+    password: '',
     database: 'api_rest_typescript',
     connectionLimit: 10 
 }
