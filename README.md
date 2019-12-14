@@ -34,7 +34,7 @@ Follow the following steps and you're good to go! Important:
 
 ```sql
 ...
-CREATE DATABASE api_rest_typescript;
+CREATE DATABASE api_rest_typescript_db;
 
 CREATE TABLE posts(
     id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -57,7 +57,7 @@ export const Keys = {
     host: process.env.HOST || '127.0.0.1',
     user: process.env.SUPERUSER || 'root',
     password: process.env.PASS || '',
-    database: process.env.DB_NAME || 'api_rest_typescript',
+    database: process.env.DB_NAME || 'api_rest_typescript_db',
     connectionLimit: 10 
 }
 ...
